@@ -9,9 +9,9 @@ hue:                        0                                   # Dynamic
 saturation:                 4                                   # Dynamic
 sharpness:                  4                                   # Dynamic
 gamma:                      8                                   # Dynamic - Requires SDK >=v3.1
-auto_exposure_gain:         true                                # Dynamic
-gain:                       100                                 # Dynamic - works only if `auto_exposure_gain` is false
-exposure:                   100                                 # Dynamic - works only if `auto_exposure_gain` is false
+auto_exposure_gain:         false                                # Dynamic
+gain:                       75                                 # Dynamic - works only if `auto_exposure_gain` is false
+exposure:                   90                                 # Dynamic - works only if `auto_exposure_gain` is false
 auto_whitebalance:          true                                # Dynamic
 whitebalance_temperature:   42                                  # Dynamic - works only if `auto_whitebalance` is false
 depth_confidence:           30                                  # Dynamic
@@ -48,7 +48,7 @@ pos_tracking:
     odometry_frame:             'odom'                          # odometry frame
     area_memory_db_path:        'zed_area_memory.area'          # file loaded when the node starts to restore the "known visual features" map. 
     save_area_memory_db_on_exit: false                          # save the "known visual features" map when the node is correctly closed to the path indicated by `area_memory_db_path`
-    area_memory:                true                            # Enable to detect loop closure
+    area_memory:                false                            # Enable to detect loop closure
     floor_alignment:            false                           # Enable to automatically calculate camera/floor offset
     initial_base_pose:          [0.0,0.0,0.0, 0.0,0.0,0.0]      # Initial position of the `base_frame` -> [X, Y, Z, R, P, Y]
     init_odom_with_first_valid_pose: true                       # Enable to initialize the odometry with the first valid pose
